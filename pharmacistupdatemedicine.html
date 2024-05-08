@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Update medicine</title>
+</head>
+<body>
+      
+    <center>
+        <fieldset>
+            <legend><b>UPDATE MEDICINE</b></legend>
+        <form action="phpfile.php" method="post" enctype="multipart/form-data">
+            MEDICINE ID <br>
+            <input type="number" name="medid" required> <br> <br>
+            MEDICINE NAME <br>
+            <input type="text" name="medname" required> <br> <br>
+            QUANTITY<br>
+            <input type="text" name="medquantity" required> <br> <br>
+            COST PRICE per pill <br>
+            <input type="number" name="cost" required><br><br>
+            <input type="submit" value="UPDATE MEDICINE" name="updatemedicinepharmacist">
+        </form>
+    </fieldset>
+    </center>
+    <a href="logout.php"><b>LOG OUT</b></a>
+</body>
+</html>

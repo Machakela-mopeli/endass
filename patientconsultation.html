@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Patient consultation</title>
+</head>
+<body>
+    <fieldset>
+        <legend><b>PATIENT CONSULTATION</b></legend>
+        <center>
+            <form action="phpfile.php" method="post" enctype="multipart/form-data">
+                PATIENT ID <br>
+                <input type="number" name="patientid" required> <br><br>
+                MESSAGE <br>
+                <textarea name="message"></textarea><br><br>
+                <input type="submit" value="SEND ISSUE" name="sendissue">
+            </form>
+        </center>
+    </fieldset>
+</body>
+</html>

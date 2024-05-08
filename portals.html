@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>portals</title>
+
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+  
+<?php
+  session_start();
+  $_SESSION['username'] = $username;
+  $_SESSION['pass'] = $pass;
+  header("Location:portals.html");
+?>
+
+   <center id="id1">
+
+   <marquee  behavior="alternate" direction="left" loop="infinity" scrollamount="5" ><div id="h3">
+    WELCOME TO MALUTI PHARMACY PORTAL</div>
+</marquee>
+
+<fieldset>
+  
+<legend><b> WHO DO YOU WANT TO LOG IN AS ?</b></legend> <br>
+ <br>
+ <div id="h3">
+<a name="adminlogin" href="enteradminpas.php"><b>SYSTEM ADMIN</b></a><br><br><br>
+
+<a href="pharmacistlogin.php"><b>PHARMACIST</b></a> <br> <br> <br>
+
+
+<a href="patientlogin.php"><b> PATIENT</b></a>
+</div>
+</fieldset>
+</center> 
+<br>
+<br>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body{
+    background-size: cover;
+    background-position:center;
+}
+
+
+#h3{
+    font-size: 23px;
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+    background-image: url(tablets-pills.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+     color: transparent;
+}
+
+body{
+    background-color: bisque;
+}
+.bodyportal2{
+    background-image: url(pile_of_pills-172349761.jpg);
+}
+.base{
+    text-align: center;
+    text-decoration: aqua;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#id1{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: blue;
+}
+.btn{
+    width: 120px;
+    height: 90px;
+    background-color: cadetblue;
+    border-radius: 60px;
+}
+.btn1{
+    width: 220px;
+    height: 180px;
+    border-radius: 120px;
+}
+.logo{
+    margin: top 1px;
+    background-color: purple;
+     text-align: center;
+    padding-right: 10px;
+}
+
+
+
+.menu_bar{
+    background-color: rgb(255, 196, 204);
+    text-align: center;
+    
+}
+.menu_bar ul{
+    display: inline-flex;
+    list-style: none;
+   
+}
+.menu_bar ul li{
+    
+    margin: left 2px;
+    padding: 10px;
+    color: black;
+    
+}
+#footer{
+    display: block;
+    background-color: rgb(255, 196, 204);
+}
+.span{
+    margin: bottom;
+    align-content: left;
+    padding: 13px;
+    width: auto;
+    position: relative;
+    display: inline-block;
+
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Consultation form</title>
+        <link rel="stylesheet" href="css.css">
+</head>
+<body>
+   <fieldset>
+   
+    <legend><b>CONSULTATION PORTAL</b></legend>
+     <center>
+        <form action="phpfile.php" method="post" enctype="multipart/form-data">
+        ID OF THE PATIENT YOU WANT TO CONSULTATION <br>
+        <input type="txt" name="consultationid"> <br><br>
+        PHARMACIST ID <br>
+        <input type="number" name="pharmacistid"><br> <br>
+        MESSAGE <br>
+        <textarea name="consultationmessage"></textarea><br><br>
+        <input type="submit" name="consultationsubmit" value="CONSULT">
+        <input type="submit" value="VIEW ALL CLIENT ISSUES" name="clientissues">
+      </form>
+     </center>
+   </fieldset>
+   <a href="logout.php"><b>LOG OUT</b></a>
+</body>
+</html>

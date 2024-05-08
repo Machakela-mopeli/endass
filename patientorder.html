@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Patient Order Portal</title>
+</head>
+<body>
+    <fieldset>
+         <legend id="h3"><b>MAKE ORDERS HERE</b></legend>
+          <center>
+         <form action="phpfile.php" method="post" enctype="multipart/form-data" >
+            PATIENT ID<br>
+            <input type="number" name="patientid" required><br> <br>
+            COLLECTION <br>
+            <input type="text" name="collection"  required ><br> <br>
+            ADDRESS <br>
+            <input type="text" name="address"><br><br>
+            DISTANCE <br>  
+            <input type="number" name="distance" id="collect"><br><br>
+            MEDICINE ID <br>
+            <input type="number" name="medid" required> <br> <br>
+            QUANTITY <br>
+            <input type="number" name="quantity" id="quantity" required><br><br>
+            PRICE PER PILL <br>
+            <input type="number" name="price"><br><br>
+            ORDER DATE <br>
+            <input type="date" name="orderdate" required><br> <br>
+            <input type="submit" name="makeorder" value="ORDER" >
+          </form>
+          </center>
+    </fieldset>
+</body>
+
+</html>

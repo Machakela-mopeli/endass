@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Order Portal</title>
+</head>
+<body>
+    <fieldset>
+        <legend> <b> UPDATE ORDER STATUS & MEDICAL RECORD</b> </legend>
+        <center>
+         <form action="phpfile.php" method="post" enctype="multipart/form-data">
+         Order ID <br>
+         <input type="number" name="orderid"><br><br>
+          Status <br>
+          <input type="text" name="orderstatus" id="orderstatus"> <br><br>
+         Pharmacist id <br>
+         <input type="number" name="pharmacistid"> <br><br>
+
+          Order Update Date <br>
+          <input type="date" name="orderupdate" id="orderupdate"><br><br>
+          PATIENT ISSUES <br><br>
+          <textarea name="issues"></textarea> <br><br>
+          CATALOGUE ID <br><br>
+          <input type="number" name="catid"><br><br>
+          <input type="submit" value="UPDATE STATUS" name="pharmacistupdateorderstatus" onclick="fix()">
+          <input type="submit" value="DISPLAY ORDERS" name="pharmacistdisplayorder" ><br><br>
+          <input type="submit" value="view medical records" name="viewmedics">
+
+         </form>
+        </center>
+
+    </fieldset>
+    <a href="logout.php"><b>LO GOUT</b></a>
+    <script>
+        function fix() {
+            var x =document.getElementById('orderid').value;
+            var y =document.getElementById('orderstatus').value;
+            var z =document.getElementById('orderupdate').value;
+            var lutho ='';
+            
+            if ( x == lutho || y == lutho || z == lutho ) {
+                
+                alert('You can not update an order with a void information');
+                return false;
+            }
+            else{ return true;}
+        }
+    </script>
+</body>
+
+</html>
